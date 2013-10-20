@@ -1,0 +1,26 @@
+{
+    "env": "development",
+    "node_port": "3001",
+    "app_name" : "profile",
+    "static_url": "http://local.m.servername.com/",
+    "services" : {
+        "defaults": {
+            "url" : "http://local.m.servername.com/test-data"
+        }
+    },
+    "logging" : {
+        "log_level": "DEBUG",
+        "log_config":  {
+            "appenders": [
+                {
+                    "type": "file",
+                    "filename": "/data/node-app/profile.log",
+                    "category": "node-profile"
+                },
+                {
+                    "type": "console"
+                }
+            ]
+        }
+    }
+}
