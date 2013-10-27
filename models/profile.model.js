@@ -5,7 +5,7 @@ var Backbone = require('sowa-shared').helpers.BackboneBase;
 module.exports = Backbone.Model.extend({
 
     url: function() {
-        return '/profile.json';
+        return '/profile-1.json';
     },
 
     initialize: function() {
